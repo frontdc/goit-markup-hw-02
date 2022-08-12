@@ -25,12 +25,14 @@ ul {
 
 a {
     text-decoration: none;
-
-
 }
 
 a:visited {
     color:inherit;
+}
+
+button {
+    border: 0;
 }
 
 .logo {
@@ -194,5 +196,42 @@ address a:focus {
     color: var(--accent-color);
 }
 
+
+
 /* Оформление portfolio.html */
 
+.filter-buttons button {
+    color: --primary-txt-color;
+    background-color: var(--grey-bg-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    
+}
+
+.filter-buttons button:hover,
+.filter-buttons button:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+.cards h2 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        text-align: left;
+
+        color: var(--primary-txt-color);
+}
+
+.cards p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.03em;
+
+        color: var(--secondary-txt-color);
+}
