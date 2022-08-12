@@ -1,5 +1,6 @@
 :root {
     --accent-color: #2196F3;
+    --mbutton-hover: #188CE8;
     --logo-color: #000000;
     --logo-footer: #FFFFFF;
     --primary-txt-color: #212121;
@@ -7,6 +8,7 @@
     --white-color: #FFFFFF;
     --grey-bg-color: #F5F4FA;
     --secondary-bg-color: #2F303A;
+    --footer-rgba-color: rgba(255, 255, 255, 0.6);
 
 } 
 
@@ -16,7 +18,13 @@ body {
 }
 
 header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
     background-color: var(--white-color);
+
 }
 
 ul {
@@ -34,6 +42,8 @@ a:visited {
 button {
     border: 0;
 }
+
+
 
 .logo {
     color: var(--logo-color);
@@ -73,6 +83,10 @@ button {
     color: var(--accent-color);
 }
 
+.header-nav.current {
+    color: var(--accent-color);
+}
+
 .contacts {
     color: var(--secondary-txt-color);
 }
@@ -81,7 +95,7 @@ button {
         background-color: var(--secondary-bg-color);
 }
 
-.hero h1 {
+.hero-title {
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
@@ -101,6 +115,14 @@ button {
 
         color: var(--white-color);
         background-color: var(--accent-color);
+        
+}
+
+.main-button:hover,
+.main-button:focus {
+    background-color: var(--mbutton-hover);
+    
+    cursor: pointer;
 }
 
 .visually-hidden {
@@ -122,6 +144,7 @@ button {
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        text-align: left;
 
         color: var(--primary-txt-color);
 }
@@ -177,7 +200,7 @@ h3 {
 footer {
     color: var(--white-color);
     background-color: var(--secondary-bg-color);
-    font-style: normal;
+    
 }
 
 address a {
@@ -196,12 +219,20 @@ address a:focus {
     color: var(--accent-color);
 }
 
+address .contacts.rgba {
+    color: var(--footer-rgba-color);
+}
+
+address .contacts.rgba:hover,
+address .contacts.rgba:focus {
+    color: var(--accent-color);
+}
 
 
 /* Оформление portfolio.html */
 
 .filter-buttons button {
-    color: --primary-txt-color;
+    color: var(--primary-txt-color);
     background-color: var(--grey-bg-color);
 
     font-weight: 500;
@@ -215,6 +246,8 @@ address a:focus {
 .filter-buttons button:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
+    
+    cursor: pointer;
 }
 
 .cards h2 {
