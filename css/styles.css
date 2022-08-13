@@ -142,7 +142,7 @@ button {
 }
 
 .peculiarities-title {
-        font-weight: 700;
+        
         font-size: inherit;
         line-height: 1.14;
         text-transform: uppercase;
@@ -154,7 +154,6 @@ button {
 
 
 .peculiarities-text {
-        
         line-height: 1.7;
         
         color: var(--secondary-txt-color);
