@@ -219,7 +219,7 @@ address .contacts-link.rgba {
 }
 
 address .contacts-link.rgba:hover,
-address .contactsv.rgba:focus {
+address .contacts-link.rgba:focus {
     color: var(--accent-color);
 }
 
