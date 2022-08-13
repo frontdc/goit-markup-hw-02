@@ -21,15 +21,6 @@ body {
 
 }
 
-header {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    background-color: var(--white-color);
-
-}
 
 ul {
     list-style: none;
@@ -76,22 +67,30 @@ button {
         
 }
 
-.header-nav {
+.nav-link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
     color: var(--primary-txt-color);
+    
+
 }
 
-.header-nav:hover,
-.header-nav:focus,
+.nav-link:hover,
+.nav-link:focus,
 .contacts-link:hover,
 .contacts-link:focus {
     color: var(--accent-color);
 }
 
-.header-nav.current {
+.nav-link.current {
     color: var(--accent-color);
 }
 
 .contacts-link {
+    letter-spacing: 0.02em;
+
     color: var(--secondary-txt-color);
 }
 
@@ -142,53 +141,33 @@ button {
     margin: -1px;
 }
 
-.peculiarities h3 {
+.peculiarities-title {
         font-weight: 700;
-        font-size: 14px;
+        font-size: inherit;
         line-height: 1.14;
-        letter-spacing: 0.03em;
         text-transform: uppercase;
-        text-align: left;
 
         color: var(--primary-txt-color);
 }
 
-h2 {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
-        text-align: center;
-        letter-spacing: 0.03em;
 
-        color: var(--primary-txt-color);
-}
 
-.peculiarities p {
-        font-size: 14px;
+
+.peculiarities-text {
+        
         line-height: 1.7;
-        letter-spacing: 0.03em;
-
+        
         color: var(--secondary-txt-color);
 }
 
-h3 {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
-        text-align: center;
-        letter-spacing: 0.03em;
-
-        color: var(--primary-txt-color);
+.section-title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
 }
 
-.team p {    
-        font-size: 16px;
-        line-height: 1.19;
-        text-align: center;
-        letter-spacing: 0.03em;
 
-        color: var(--secondary-txt-color);
-}
+
 
 .team {
     background-color: var(--grey-bg-color);
@@ -198,25 +177,40 @@ h3 {
     background-color: var(--white-color);
 }
 
+.member-name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+       
+}
+
+.job-title {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    
+    color: var(--secondary-txt-color);
+}
+
 
 
 
 footer {
-    color: var(--white-color);
     background-color: var(--secondary-bg-color);
     
 }
 
-address a {
+address .address-link {
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-
-    color: var(--white-color);
+     line-height: 1.71;
+    
+     color: var(--white-color);
 
 }
+
+
 
 
 
@@ -233,7 +227,7 @@ address .contactsv.rgba:focus {
 /* Оформление portfolio.html */
 
 .filter-buttons button {
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -257,21 +251,21 @@ address .contactsv.rgba:focus {
     cursor: pointer;
 }
 
-.cards h2 {
-        font-weight: 700;
+.card-title {
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
         text-align: left;
-
+        
         color: var(--primary-txt-color);
+
+        
 }
 
-.cards p {
-        font-weight: 400;
+.card-text {
+       
         font-size: 16px;
         line-height: 1.87;
-        letter-spacing: 0.03em;
-
+        
         color: var(--secondary-txt-color);
 }
